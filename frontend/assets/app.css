@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Gray shades */
+  --color-black: #000000;
+  --color-dark: #1f1f1f;
+  --color-medium: #2e2e2e;
+  --color-medium-light: #313131;
+  --color-light-medium: #969593;
+  --color-light: #a6a6a6;
+  --color-lighter: #bdbbb7;
+  --color-lightest: #f1f1f1;
+
+  /* Accent colors */
+  --color-green: #45ffbc;
+  --color-olive: #e3ffa8;
+
+  /* General */
+  --color-white: #ffffff;
+
+  /* Text colors */
+  --text-primary: var(--color-white);
+  --text-secondary: var(--color-lightest);
+  --text-tertiary: var(--color-light-medium);
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: var(--text-primary);
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+select,
+input,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-black);
+  border-bottom: 1px solid var(--color-medium);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Custom scrollbar styling */
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: var(--color-black);
+  /* Adjust background color */
+}
+
+/* Thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-olive);
+  /* Adjust thumb color */
+  border-radius: 20px;
+  /* Rounded corners */
+  border: 3px solid var(--color-black);
+  /* Border around the thumb */
+}
+
+/* Thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-green);
+  /* Adjust thumb color on hover */
+}
